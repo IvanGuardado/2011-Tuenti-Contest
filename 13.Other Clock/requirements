@@ -1,0 +1,19 @@
+Challenge 13: The Other Clock
+_________________________________________________________________________
+
+You have a new digital, 7 led segment, clock. You still remember that sci-fi dream you had some time ago. Today, while waking up from a romantic dream, you wonder: how many times will the individual leds turn on after X seconds, from a 00:00:00 position?
+
+
+
+Yeah, geeks. But as a good geek you will not that question stay on your mind forever, right? ;)
+
+Take into account that this clock is new. It can save lots of energy. Every time a second passes, only the new leds needed to obtain the next clock position will be turned on. This is what we call a delta digital clock. Or a nice problem ;)
+
+SAMPLE INPUT
+0 4
+SAMPLE OUTPUT
+36 42
+TEST
+
+21374
+22282

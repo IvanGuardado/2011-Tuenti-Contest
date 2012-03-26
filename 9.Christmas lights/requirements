@@ -1,0 +1,56 @@
+Challenge 9: Christmas lights
+_________________________________________________________________________
+It’s always Christmas in Christmasville, and there are many laws about the christmas decoration that can be used there. Mr. Grinch Claus, mayor of Christmasville has defined that the christmas lights have to blink in a special way, where:
+
+In a set of christmas lights, all light bulbs are sequentially connected by a power cable, where each one has a numerated, in sequence, starting from 0
+No neighbor lights can be turned on at the same time
+When pluged to the power, all lamps must be off, and after one second, only the first lamp (lamp #0) turns on
+After that, at every second the light(s) that were on, go off and their neighbors turn on, like this:
+Instant 0 – All lights are off
+Instant 1 – Light #0 turns on
+Instant 2 – Light #0 turns off and light #1 turns on
+Instant 3 – Light #1 turns off and lights #0 and #2 turn on
+Instant 4 – Lights #0 and #2 turn off and lights #1 and #3 turn on
+Instant 5 – Lights #1 and #3 turn off and lights #0, #2 and #4 turn on
+…
+To make sure every factory is following these restrictions, Mr. Grinch Claus asked you to write a software to validate this behavior, and given the number of lights in the set and the instant of time, your software must tell which lamps should be ON at that moment.
+
+INPUT
+N – number of test cases, the number of inputs you need to validate
+For every N test case, the input has:
+l – the number of lights in the set
+t – the time, in seconds from the moment the set was turn on, that you want to verify
+OUTPUT
+For each N test cases, one line with the list of lights that are turned on (in order) or All lights are off :( if there’s no light turned on
+
+LIMITS
+1 ≤ N ≤ 100
+1 ≤ l ≤ 64
+1 ≤ t ≤ 109
+EXAMPLE
+SAMPLE INPUT
+4
+5
+3
+8
+6
+1
+2
+2
+3
+SAMPLE OUTPUT
+0 2
+1 3 5
+All lights are off :(
+0
+TEST
+
+4
+5
+3
+8
+6
+1
+2
+2
+3

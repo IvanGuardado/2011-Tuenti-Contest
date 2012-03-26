@@ -1,0 +1,34 @@
+Challenge 8: The Biologist Problem
+_________________________________________________________________________
+You are a biologist examining dna sequences of different life forms. you are given two dna sequences, and the goal is to find the largest ordered set of adjecent bases that are the same in both DNAs.
+
+DNA sequences are given as ordered sets of nucleotide bases: adenine (abbreviated a), cytosine (c), guanine (g) and thymine (t).
+
+ATGTCTTCCTCGA
+TGCTTCCTATGAC
+
+Figure 1. DNA strands
+For the example above, the result is CTTCCT because that is the largest ordered set of adjecent bases that can be found in both lifeforms.
+
+Input and output are received from the standard input and output streams.
+
+Input Two strings of dna nucleotide bases, each representing one genome sequence.
+
+Output A single string – the longest sequence of adjecent nucleotide bases that are present in both lifeforms.
+
+INPUT SAMPLE
+ctgactga actgagc cgtaattgcgat cgtacagtagc ctgggccttgaggaaaactg gtaccagtactgatagt
+OUTPUT SAMPLE
+actga cgta actg
+TEST
+
+aatttcggtcgacgtccgtgcctttgcccgggaagactaatagggccgttgtgtgaggggc actcacctacatgaagtcgaccttaggttgtagatgtagtaacggaatgaatccgatcggtgt
+cataccccatccacaaagtctgcaggaacagctcgg attaagacttcgaaacgatcagggtatctctcaggagcttcatcatacctctaccgtgc
+tagctgtccgtgacgagctcccacagatgtcgtgtgaaacgg atgtgatatttttgcaactcatgatcactcgccgcaggacgctgcaatggtattaaccgggcccagcccgacgtaaaacccaaatctaaat
+agtggcaggaggtgttcgtcactccggtacggtcatacgtgagcgccagcaacaaagctgcacatacctaacgcgttgcgacac accatttccaacgtcgatacaccaggtatgtccgagtaatggccagcacgcttaagccgtatagcaatgcactttcgcccg
+gagctatgtgttctctgttcgtccgt cattctccgactttttaacatgttatggcacaggatatcagg
+ggcttaatacggagaattgtcaaatgatgacatcgctagtctcatgcgccggggtgcttattggcaacatttcacggtatatgaggcgtatatctaa tccgcccgtttaatg
+gagtctaattgtgagcgacggtctcgactgagaggagctgatgggaaggcatgctcgtcttatggaggagg tccggaggtcaagcatcgctggggttgggtttgcaccatataggtgcagtagacgagactgaggttatga
+tcaccattgga agatgataaggtcggtcgcaccaatgcaaacctctataggcaatatgcgtacggcgagcacagtagtggggattagggtagattcgtacactacgatcc
+ctcccctcatagcaacgaagt gtccgaacca
+agctggggcaactcatgccagttgtattagcgatatggtcccaagaacagacgtacactacg gtggagggtcccaatga

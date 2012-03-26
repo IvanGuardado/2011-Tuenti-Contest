@@ -1,0 +1,65 @@
+You are an entrepreneur in Madrid, and have a brilliant idea to open a milk shop in Plaza Mayor. As you are very conscious, you want the milk you sell to be perfectly natural and fresh, and for that reason, you are shipping healthy cows from Zaragoza region to Madrid. At your disposal you have a truck with the weight limit, and a group of cows available for sale. Each cow can weigh differently, and produce a different amount of milk per day.
+
+Your goal as an entrepreneur is to choose which cows to buy and transfer in your truck, so you can maximize the milk production, observing the truck weight limit.
+
+
+Input Total number cows in Zaragoza area that are for sale.
+
+
+Input Total weight you truck can handle.
+
+
+Input List of cow weights, one per cow.
+
+
+Input List of cow milk production in liters per day, one per cow.
+
+
+Output the maximum amount of milk production you can get.
+
+
+Example
+
+
+Figure: Example input
+Cow #	Cow Weight in Kilograms	Cow Milk Production per Day
+ 1	360	40
+ 2	250	35
+ 3	400	43
+ 4	180	28
+ 5	50	12
+ 6	90	13
+
+ 
+700 kg
+Figure: Output for the given example: cows 1, 4, 5 and 6 make 93 liters.
+Cow #	Cow Weight in Kilograms	Cow Milk Production per Day
+ 1	360	40
+ 4	180	28
+ 5	50	12
+ 6	90	13
+4x	total 700kg	total 93L milk production
+
+Input and output format
+
+
+Input and output come from standard input and output streams.
+
+Input 4 parameters:
+
+Number of cows available for sale, e.g. 6
+Truck weight limit in kilograms, e.g. 700
+Comma-separated list of cow weights, e.g. 360,250,400,180,50,90
+Comma-separated list of cow milk production, e.g. 40,35,43,28,12,13
+
+Output 93 
+Sample input
+
+6 700 360,250,400,180,50,90 40,35,43,28,12,13
+8 1000 223,243,100,200,200,155,300,150 30,34,28,45,31,50,29
+10 2000 340,355,223,243,130,240,260,155,302,130 45,50,34,39,29,40,30,52,31
+Sample output
+
+93
+188
+320

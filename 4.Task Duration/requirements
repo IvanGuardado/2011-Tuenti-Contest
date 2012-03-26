@@ -1,0 +1,27 @@
+You are trying to solve a very complex problem. In order to simplify it, you have divided it into many sub tasks. Most of these sub-tasks can be run in parallel, but some are dependent on the previous resolution of other tasks. There is no limit on the number of tasks that can be run in parallel. Each task has an associated computation time.
+
+You are be given a subset of these tasks. For each of them you need to specify what is the minimal computation time for resolving the task (you must consider task dependencies).
+
+The relations between the tasks are represented in the file contained in this archive: in.zip.This file is in the following format:
+
+#Number of tasks
+n
+
+#Task duration <- task x has an associated computation time of tx
+x,tx
+
+#Task dependencies <- the resolution of task x depends of previously solving tasks y,z,w
+x,y,z,w
+
+It is imposible for two different tasks to be dependent on the resolution of one common task:
+#Task dependencies <- this is not valid
+x,y
+z,y
+
+The expected output is the following format: taskId taskComputationTime
+x tx
+y ty
+z tz
+
+From the standard input you will receive a set of tasks for which to compute the total time in the following format:
+x,y,z

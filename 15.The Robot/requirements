@@ -1,0 +1,49 @@
+Challenge 15: The Robot
+_________________________________________________________________________
+You are Alfonso D. Artiste, the greatest computer programmer turned artist billionaire in the world. For your next great art gallery, you have invented a sentient robot, Alfonso D. Artiste Jr. (you are not creative at names) that can generate modern art all by itself.
+
+Given a white canvas W wide by L long, Alfonso D. Artiste Jr. will paint N rectangles of various colors on the canvas, thus making modern art through overlapping colors. Because of the way that these rectangles overlap, there will be various shapes of different colors when looking down on the canvas.
+
+Alfonso Jr. needs help naming his algorithmic art pieces, based on the resulting color patterns. Given the order and locations that Alfonso Jr. paints the rectangles, output a list of all the colors that can be seen, and their total areas.
+
+Assume that a new layer of paint completely obscures everything under it, and that Alfonso D. Artiste Jr. is programmed only to paint rectangles parallel to the canvas borders. The origin, (0,0), is at the bottom left of the canvas.
+
+Input and output are received from the standard input and output streams.
+
+INPUT
+First, W, L and N, space separated. Then, repeated iterations of five integers, lx ly ux uy color representing respectively the lower left coordinates and upper right coordinates of the rectangle of color ‘color’. The color 1 is the color of the canvas.
+
+OUTPUT
+A list of colors and their areas, sorted by color.
+
+INPUT SAMPLE
+15 10 3 1 1 14 9 2 4 4 8 9 3 6 0 13 7 4
+This is what the result of the input looks like:
+
+
+111111111111111
+122233332222221
+122233332222221
+122233444444421
+122233444444421
+122233444444421
+122222444444421
+122222444444421
+122222444444421
+111111444444411
+
+OUTPUT SAMPLE
+1 39 2 48 3 14 4 49
+Meaning there are 39 “pixels” of the canvas that are painted the color “1″, 48 that are painted the color “2″, and so on.
+TEST
+
+13 15 3 8 6 11 8 2 2 4 12 5 3 3 11 12 12 4
+17 17 9 15 1 16 14 2 5 2 8 4 3 4 7 14 13 4 4 4 6 16 5 11 11 15 12 6 14 5 16 13 7 8 8 11 15 8 3 15 14 16 9 9 6 15 13 10
+15 13 9 1 3 14 5 2 1 11 10 12 3 1 7 14 9 4 8 6 13 7 5 10 6 13 9 6 13 3 14 5 7 12 8 14 11 8 10 9 12 12 9 6 5 13 8 10
+9 7 4 3 1 7 2 2 4 3 5 4 3 4 3 8 6 4 4 5 5 6 5
+8 6 9 1 1 2 5 2 6 1 7 4 3 1 4 7 5 4 2 4 6 5 5 1 2 5 3 6 2 4 7 5 7 2 2 6 4 8 5 1 7 2 9 5 4 6 5 10
+18 7 1 11 4 13 6 2
+15 13 9 7 8 10 12 2 2 6 10 11 3 1 6 2 10 4 8 4 9 10 5 10 9 13 11 6 10 2 13 8 7 2 3 12 6 8 2 3 13 4 9 3 9 9 11 10
+18 13 4 8 10 16 11 2 15 7 16 8 3 12 10 17 11 4 10 5 17 12 5
+11 4 5 4 1 10 2 2 5 1 8 3 3 7 2 9 3 4 7 2 10 3 5 8 1 10 2 6
+6 18 1 4 3 5 10 2

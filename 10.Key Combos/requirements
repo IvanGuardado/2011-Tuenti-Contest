@@ -1,0 +1,58 @@
+Challenge 10: Key Combos
+_________________________________________________________________________
+You are developing an application that allows the user to set custom keyboard shortcuts to actions. The user can set any key combination he wants and after setting them, when a combination is pressed, the action associated to it is printed on the screen.
+
+Also, a key combo is valid independently of the order that the keys are pressed. For example, if the user pulses CTRL ALT DEL or ALT CTRL DEL, the result is the same. So, the user cannot define two key combos that contain exactly the same keys just in different order.
+
+Based on this information, your task is to implement such system with the following input/output:
+
+INPUT
+n - The number of key combos that the user wants to save
+Two lines for each key combo entry:
+l - the list of keys, separated by spaces, every key is represented by a string that can have from 0 (e.g.: A) to 6 (e.g.: DELETE) characters
+c - a string that describes the command to be performed
+t - The number of test cases
+t lines with test cases containing the key combinations that should be processed
+OUTPUT
+For each test case, print the action to be performed
+
+LIMITS
+1 ≤ n ≤ 100
+1 ≤ l ≤ 100 keys
+1 ≤ t ≤ 106
+EXAMPLE
+Input
+3
+CTRL ALT DEL
+reboot
+ALT F4
+closeApp
+ALT TAB
+switchApp
+5
+ALT F4
+CTRL ALT DEL
+ALT TAB
+ALT CTRL DEL
+F4 ALT
+Output
+closeApp
+reboot
+switchApp
+reboot
+closeApp
+TEST
+
+3
+CTRL ALT DEL 
+reboot 
+ALT F4
+closeApp 
+ALT TAB 
+switchApp 
+5 
+ALT F4
+CTRL ALT DEL
+ALT TAB
+ALT CTRL DEL
+F4 ALT

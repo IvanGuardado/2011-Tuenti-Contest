@@ -1,0 +1,16 @@
+Challenge 6: The clock
+_________________________________________________________________________
+You have a digital, 7 led segment, clock. One day, while waking up from a sci-fi dream, you wonder: how many times will the individual leds turn on after X seconds, from a 00:00:00 position?
+
+Yeah, geeks. But as a good geek you will not that question stay on your mind forever, right? ;)
+
+Take into account that every second, all leds turn off and then the ones for the next position will turn on.
+
+SAMPLE INPUT
+0 4
+SAMPLE OUTPUT
+36 172
+TEST
+
+6975
+8793

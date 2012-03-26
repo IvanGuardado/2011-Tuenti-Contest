@@ -1,0 +1,14 @@
+$ ssh-keygen -N "" -b 1024 -f ~/.ssh/id_rsa 
+Generating public/private rsa key pair. 
+Your identification has been saved in ~/.ssh/id_rsa. 
+Your public key has been saved in ~/.ssh/id_rsa. 
+$ cat ~/data | openssl rsautl -encrypt -inkey ~/ssh/id_rsa | base64 > /safe/data.crypt 
+$ rm -rf ~/
+Ouch! Poor me, on my old debian lousy 32 bits machine I deleted my home directory, with all the encryption keys and the original data!!! I tried to undelete, but no avail.
+
+Can you help me recover my data back?
+INPUT
+
+HABGFYtzVEavDIozEZLhht0va3td2CAO6/IalWIPcUMLvpsEwF/w7SavE4UWxkvXPyCjPaBLd5cz
+EB+B7GR209mMk+Im03QK84Vyu3Ln4fXyTuYZ4NLxLbKq3WjMyQYDheCYV6ncu7CBtj+QhJcrvU+V
+647H83qiG0Hb9EaGIXs=

@@ -1,0 +1,10 @@
+We use a variety of languages and technologies here at Tuenti. Sometimes we even develop our own languages and tools. Here is an example from a programming language that we use when we want to blow our minds. Your task is to interpret it!
+
+Sample input
+^= 1 2$
+^# 2 2$
+^@ 3 1$
+Sample output
+3
+4
+2

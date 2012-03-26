@@ -1,0 +1,23 @@
+Challenge 14: Colors Are Beautiful
+_________________________________________________________________________
+We are pretty sure you have seen this image before. It is time to take a closer look at it… hmmmm… lots of blue…
+
+But there are also lots of others, as you are seeing a 24 bit color image. And to get those, every pixel has some information about the red, green and blue components in it.
+
+Given a line of pixels in the image and a component color (RGB), you should compute the sum of that component for every pixel in the line + 1. In decimal.
+
+SAMPLE INPUT
+B515
+G335
+R380
+
+SAMPLE OUTPUT
+25763
+93405
+89089
+
+TEST
+
+G73
+R481
+B126

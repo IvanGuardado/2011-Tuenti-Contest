@@ -1,0 +1,56 @@
+You are playing a game. You are given small wooden tiles, each with a sign on it, e.g:
+
+
+Given two ordered sets of tiles, the game is to find the cheapest way to transform the first set into the second, e.g.
+
+The possible operations are:
+
+Add a new tile (from the set of all tiles)
+Remove a tile
+Exchange the current tile with any other tile (from the set of all tiles)
+Each operation has a different price, e.g. adding a new tile in a place costs 1, removing a tile from its place costs 3, and replacing one tile with another costs 2, like in the following examples:
+
+
+ 
+Figure 1: Example of adding a  tile, costing 1.
+
+Depending on the price, sometimes it could be cheaper to remove one tile and add another, instead of exchanging them.
+
+
+ 
+Figure 2: Example of deleting a  tile, costing 3.
+
+ 
+Figure 3: Example of replacing a   tile with a  tile, costing 2.
+
+Input and output are received fromt the standard input and output streams.
+
+
+Input Two ordered set of tiles represented as UTF-8 characters, and a comma-separated list of prices in the following order: adding price, deleting price, swapping price, e.g.
+
+
+ 
+Figure 4: Example input arguments for the game
+
+For this input, the minimal price is to remove the  tile, and replacing the  tile with the  tile, thus costing 5 in total: 3 for removing the  and 2 for replacing the  tile with the  tile.
+
+
+Output Integer representing the minimal cost found.
+
+
+
+Example inputs and outputs (with prices remaining 1,3,2):
+
+
+
+ 
+Figure 5: Example of inputs and outputs
+
+Sample input
+
+123 345 1,1,1
+abcdefg badfscg 2,2,1
+Sample output
+
+3
+6
