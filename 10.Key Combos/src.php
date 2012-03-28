@@ -5,7 +5,7 @@ require_once 'ComboList.php';
 $lines = file('php://stdin');
 $combosCount = intval(array_shift($lines));
 $comboList = new ComboList();
-//Load de combos
+//Load the combos
 for($i=0; $i<$combosCount; $i++)
 {
     $keys = trim(array_shift($lines));
@@ -17,7 +17,11 @@ for($i=0; $i<$combosCount; $i++)
 $tests = intval(array_shift($lines));
 for($i=0; $i<$tests; $i++){
     $test = trim(array_shift($lines));
-    $filteredComboList = $comboList;    
+    $filteredComboList = $comboList;
+    //You can do: 
+    //$filteredComboList->findByKey('ALT')
+    //   ->findByKey('DEL')
+    //  ->findByKey('CTRL');
     foreach(explode(' ', $test) as $key){
         $filteredComboList = $filteredComboList->findByKey($key);
     }
