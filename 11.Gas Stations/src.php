@@ -17,13 +17,13 @@ function printStops($maxDistance, $totalDistance, $totalGasStations, array $dist
     $stops = array();
     for($i=0; $i<count($distances) && $nextDistance < $totalDistance; $i++){
         if($distances[$i] > $nextDistance){
-            $stops[] = $distances[$i-1].' ';
+            $stops[] = $distances[$i-1];
             $nextDistance = $distances[$i-1]+$maxDistance;
             --$i;
         }
     }
     if(count($stops)>0){
-        echo implode('', $stops);
+        echo implode(' ', $stops);
     }else{
         echo 'No stops';
     }
