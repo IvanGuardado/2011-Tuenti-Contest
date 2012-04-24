@@ -1,44 +1,5 @@
-Challenge 12: The Stargate Problem
-_________________________________________________________________________
-
-It is the post-apocaliptic time after a series of Sun-like stars going supernova throught the
-universe. You are in the Stargate Command on planet Earth and you need to reach the Atlantis
-Stargate in the Pegasus galaxy. Since the damage caused by the supernovas has destroyed most of the
-Stargate databases, you only have the addresses of certain planets, and limited energy to travel
-only to specific planets. The Stargate travel carries additional time travel, due to high supernova
-radiations, so crossing through one takes you to a different planet, in a different time.
-
-
-Your goal is to travel from Earth to Atlantis so that you reach Atlantis “as sooner as possible”, possibly even in the past.
-
-Your starting stardate is 25000.
-
-Input Total number of known planets you can reach.
-
-Input The time shift incurred by going from a planet to a planet:
-
-
-The given matrix implies that it does not take any time to go from a planet to the same planet
-(staying in place) – hence the elements are 0. The planet combinations with traveling shift , there
-is not enough power to make the stable wormhole, and those jumps cannot me made. E.g., the temporal
-shift in traveling from planet 0 to planet 2 is 2000 time units, and in going from planet 5 to
-planet 2 is 1250 time units. Travel from planet 1 to planet 4 is instantaneous, and travel from
-planet 2 to planet 0 is impossible.
-
-Output The minimal arrival startade; possibly before the stardate of departure.
-
-Sample input Input sample comes form the standard input and contains several lines, each representing a problem instance. Each problem instance is given in a format:
-
-NumberOfPlanets EarthIndex AtlantisIndex Planet1,Planet2,TemporalShift12 Planet3,Planet2,TemporalShift23 ...
-e.g.
-
-5 0 4 0,1,3000 0,2,2000 1,0,1300 1,3,-2195 1,4,0 2,1,445 3,1,2900 3,5,500 4,0,2300 4,1,1000 4,2,1200 4,3,1800 5,0,0 5,2,1250 3 0 2 0,1,1 1,0,-2 1,2,1
-SAMPLEOUTPUT
-Integer – minimal possible stardate of arrival on Atlantis, or BAZINGA if it is impossible to determine the stardate.
-
-25750 BAZINGA
-TEST
-
+6 0 5 0,1,3000 0,2,2000 1,0,1300 1,3,-2195 1,4,0 2,1,445 3,1,2900 3,5,500 4,0,2300 4,1,1000 4,2,1200 4,3,1800 5,0,0 5,2,1250
+3 0 2 0,1,1 1,0,-2 1,2,1
 19 0 18 10,1,4055 7,11,1278 9,17,4334 1,5,1754 4,17,3024 0,12,106 10,15,-3822 14,1,491 17,5,2078 13,2,338 10,6,2106 13,4,4159 1,13,1081 12,7,2170 5,14,1137 6,0,2484 10,0,833 4,2,3282 14,18,2407 1,3,4973 0,16,4060 16,2,4267 2,3,440 2,12,4106 0,15,2458 16,6,3616 1,17,2423 10,11,2109 15,1,1387 0,13,44 8,9,2441 8,6,2165 2,1,83 17,13,2643 1,16,1580 13,15,2222 5,9,-1311 4,10,2973 0,3,3500 16,10,3292 10,9,4714 16,4,4962 7,2,476 16,14,3920 11,17,2752 3,5,2587 5,10,267 5,0,4135 7,4,1630 11,4,3737 3,13,3932 7,17,1589 1,9,774 18,12,2798 17,12,4385 16,17,2447 12,9,2704 2,0,3111 12,14,4041 2,14,4357 14,7,2220 3,9,3789 2,17,4516 15,14,652 7,6,2595 1,0,3999 16,18,2421 8,10,3954 7,8,699 12,13,4378 18,7,3699 13,7,1062 16,3,2937 5,18,1382 1,4,785 2,5,2624 16,8,4293 4,8,3626 11,13,4482 13,14,3619 15,17,3923 12,11,1673 10,17,3096 8,5,2640 6,3,2497 8,14,3929 8,18,4543 8,13,3535 6,18,3139 4,12,309 14,17,1289 18,4,-2060 15,8,2329 11,3,519 5,6,2113 6,1,1148 14,9,778 15,4,738 14,6,2350 11,8,4773 3,7,2018 12,5,2523 12,1,2748 18,0,3958 8,0,3344 14,4,2070 16,5,4367 16,11,1627 1,8,177 15,11,-3402 18,17,2842 7,9,719 16,15,3240 17,8,1440 17,6,-4348 3,15,4862 6,4,3136 16,9,3754 12,6,4664 6,9,3175 18,3,3888 8,12,2023 10,12,3607 17,0,501 15,9,1694 8,3,801 10,14,1480 7,0,920
 10 0 9 1,5,4732 0,7,4722 4,8,346 7,2,-4043 1,9,1629 1,8,353 9,5,25 2,5,4458 6,1,1295 0,9,4617 8,3,4451 8,5,4541 7,5,894 7,3,1306 9,8,4003 8,7,2427 2,3,338 0,8,1383 6,7,2185 9,7,14 3,6,1451 6,4,2872
 14 0 13 2,7,2527 13,6,3431 6,11,2156 10,13,4094 9,2,3163 10,11,2612 5,2,704 0,6,2827 7,9,3939 1,13,4315 9,12,4152 5,10,4983 3,12,1847 8,4,1015 0,9,1887 7,0,689 4,0,3171 8,1,3617 12,1,3375 2,8,1752 9,6,1459 0,8,4765 5,12,2162 4,2,3213 2,11,7 7,6,3337 6,10,1172 13,7,2201 3,6,2031 2,10,359 4,1,173 9,13,3664 5,8,3431 2,3,3738 5,1,1731 10,9,2081 0,12,2846 0,13,2855 9,11,273 7,1,496 2,13,441 7,12,3185 11,7,775 4,9,699 7,10,205 3,9,2470 9,1,1763 12,8,2840 11,3,3303 8,10,4022 4,3,3630 0,2,816 2,1,847 11,12,350 3,1,2384 4,13,1372
