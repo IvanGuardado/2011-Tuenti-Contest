@@ -1,17 +1,18 @@
-Challenge 15: The Robot
-_________________________________________________________________________
-You are Alfonso D. Artiste, the greatest computer programmer turned artist billionaire in the world. For your next great art gallery, you have invented a sentient robot, Alfonso D. Artiste Jr. (you are not creative at names) that can generate modern art all by itself.
-
-Given a white canvas W wide by L long, Alfonso D. Artiste Jr. will paint N rectangles of various colors on the canvas, thus making modern art through overlapping colors. Because of the way that these rectangles overlap, there will be various shapes of different colors when looking down on the canvas.
-
-Alfonso Jr. needs help naming his algorithmic art pieces, based on the resulting color patterns. Given the order and locations that Alfonso Jr. paints the rectangles, output a list of all the colors that can be seen, and their total areas.
-
-Assume that a new layer of paint completely obscures everything under it, and that Alfonso D. Artiste Jr. is programmed only to paint rectangles parallel to the canvas borders. The origin, (0,0), is at the bottom left of the canvas.
-
-Input and output are received from the standard input and output streams.
-
-INPUT
-First, W, L and N, space separated. Then, repeated iterations of five integers, lx ly ux uy color representing respectively the lower left coordinates and upper right coordinates of the rectangle of color ‘color’. The color 1 is the color of the canvas.
+Challenge 15: The Robot _________________________________________________________________________
+You are Alfonso D. Artiste, the greatest computer programmer turned artist billionaire in the world.
+For your next great art gallery, you have invented a sentient robot, Alfonso D. Artiste Jr. (you are
+not creative at names) that can generate modern art all by itself. Given a white canvas W wide by L
+long, Alfonso D. Artiste Jr. will paint N rectangles of various colors on the canvas, thus making
+modern art through overlapping colors. Because of the way that these rectangles overlap, there will
+be various shapes of different colors when looking down on the canvas. Alfonso Jr. needs help naming
+his algorithmic art pieces, based on the resulting color patterns. Given the order and locations
+that Alfonso Jr. paints the rectangles, output a list of all the colors that can be seen, and their
+total areas. Assume that a new layer of paint completely obscures everything under it, and that
+Alfonso D. Artiste Jr. is programmed only to paint rectangles parallel to the canvas borders. The
+origin, (0,0), is at the bottom left of the canvas. Input and output are received from the standard
+input and output streams. INPUT First, W, L and N, space separated. Then, repeated iterations of
+five integers, lx ly ux uy color representing respectively the lower left coordinates and upper
+right coordinates of the rectangle of color ‘color’. The color 1 is the color of the canvas.
 
 OUTPUT
 A list of colors and their areas, sorted by color.
