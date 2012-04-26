@@ -1,18 +1,25 @@
 Challenge 16: The Bus Stations
 _________________________________________________________________________
 
-You are organizing bus traffic routes in Spain. You have to send busses from one city to another, but each road between intermediate cities has a different limitation on the number of busses that can take the road per day. Your task is to find the maximal number of buses that can go from a certain city to another, using the provided routes and their capacities.
+You are organizing bus traffic routes in Spain. You have to send busses from one city to another,
+but each road between intermediate cities has a different limitation on the number of busses that
+can take the road per day. Your task is to find the maximal number of buses that can go from a
+certain city to another, using the provided routes and their capacities.
 
 
 INPUT
-Input is given via standard input as several lines, each presenting one instance of the problem. Each line contains the origin, destination and several triplets with the possible roads between intermediate cities with the capacity of each of them.
+Input is given via standard input as several lines, each presenting one instance of the problem.
+Each line contains the origin, destination and several triplets with the possible roads between
+intermediate cities with the capacity of each of them.
 
 Each line has the following format:
 
 NumberOfStations OriginStation DestinationStation Station1,Station2,Limit1 Station3,Station1,Limit2 Station4,Station5,Limit3 ...
 For example:
 
-Madrid Barcelona Madrid,Segovia,10 Madrid,Toledo,40 Segovia,Toledo,30 Segovia,Barcelona,50 Toledo,Madrid,30 Toledo,Barcelona,100 Barcelona,Segovia,25 Barcelona,Toledo,400 Sol Palacio Sol,Cortes,3 Sol,Embajadores,3 Cortes,Tribunal,4 Tribunal,Sol,3 Tribunal,Embajadores,2 Embajadores,Retiro,3 Embajadores,Callao,6 Retiro,Cortes,1 Retiro,Palacio,1
+Madrid Barcelona Madrid,Segovia,10 Madrid,Toledo,40 Segovia,Toledo,30 Segovia,Barcelona,50 Toledo,Madrid,30 Toledo,Barcelona,100 Barcelona,Segovia,25 Barcelona,Toledo,400 
+Sol Palacio Sol,Cortes,3 Sol,Embajadores,3 Cortes,Tribunal,4 Tribunal,Sol,3 Tribunal,Embajadores,2 Embajadores,Retiro,3 Embajadores,Callao,6 Retiro,Cortes,1 Retiro,Palacio,1
+
 OUTPUT
 For each input line describing a route, print a line with the maximal number of buses that can go from the origin city to the destination city.
 
